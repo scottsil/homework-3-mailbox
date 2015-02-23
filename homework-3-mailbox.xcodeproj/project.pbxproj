@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC230A8B1A99D781006448D3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC230A8A1A99D781006448D3 /* Common.swift */; };
 		AC9B299F1A99BD4F00076668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B299E1A99BD4F00076668 /* AppDelegate.swift */; };
 		AC9B29A11A99BD4F00076668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B29A01A99BD4F00076668 /* ViewController.swift */; };
 		AC9B29A41A99BD4F00076668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9B29A21A99BD4F00076668 /* Main.storyboard */; };
 		AC9B29A61A99BD4F00076668 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9B29A51A99BD4F00076668 /* Images.xcassets */; };
-		AC9B29A91A99BD4F00076668 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9B29A71A99BD4F00076668 /* LaunchScreen.xib */; };
 		AC9B29B51A99BD4F00076668 /* homework_3_mailboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B29B41A99BD4F00076668 /* homework_3_mailboxTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,13 +26,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC230A8A1A99D781006448D3 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		AC9B29991A99BD4F00076668 /* homework-3-mailbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "homework-3-mailbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9B299D1A99BD4F00076668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9B299E1A99BD4F00076668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9B29A01A99BD4F00076668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC9B29A31A99BD4F00076668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC9B29A51A99BD4F00076668 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AC9B29A81A99BD4F00076668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AC9B29AE1A99BD4F00076668 /* homework-3-mailboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "homework-3-mailboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9B29B31A99BD4F00076668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC9B29B41A99BD4F00076668 /* homework_3_mailboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homework_3_mailboxTests.swift; sourceTree = "<group>"; };
@@ -77,11 +77,11 @@
 		AC9B299B1A99BD4F00076668 /* homework-3-mailbox */ = {
 			isa = PBXGroup;
 			children = (
+				AC230A8A1A99D781006448D3 /* Common.swift */,
 				AC9B299E1A99BD4F00076668 /* AppDelegate.swift */,
 				AC9B29A01A99BD4F00076668 /* ViewController.swift */,
 				AC9B29A21A99BD4F00076668 /* Main.storyboard */,
 				AC9B29A51A99BD4F00076668 /* Images.xcassets */,
-				AC9B29A71A99BD4F00076668 /* LaunchScreen.xib */,
 				AC9B299C1A99BD4F00076668 /* Supporting Files */,
 			);
 			path = "homework-3-mailbox";
@@ -193,7 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9B29A41A99BD4F00076668 /* Main.storyboard in Resources */,
-				AC9B29A91A99BD4F00076668 /* LaunchScreen.xib in Resources */,
 				AC9B29A61A99BD4F00076668 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9B29A11A99BD4F00076668 /* ViewController.swift in Sources */,
+				AC230A8B1A99D781006448D3 /* Common.swift in Sources */,
 				AC9B299F1A99BD4F00076668 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,14 +242,6 @@
 				AC9B29A31A99BD4F00076668 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AC9B29A71A99BD4F00076668 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC9B29A81A99BD4F00076668 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "homework-3-mailbox/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "homework-3-mailbox/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +399,7 @@
 				AC9B29BA1A99BD4F00076668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC9B29BB1A99BD4F00076668 /* Build configuration list for PBXNativeTarget "homework-3-mailboxTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +408,7 @@
 				AC9B29BD1A99BD4F00076668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

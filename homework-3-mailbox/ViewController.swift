@@ -53,9 +53,13 @@ class ViewController: UIViewController {
         firstMessageHidden = false
         
         // Programatically add edge pan gesture to mailbox view
-        var edgeGesture = UIScreenEdgePanGestureRecognizer(target: self, action: "onEdgePan:")
-        edgeGesture.edges = UIRectEdge.Left
-        mailboxView.addGestureRecognizer(edgeGesture)
+        var leftEdgeGesture = UIScreenEdgePanGestureRecognizer(target: self, action: "onLeftEdgePan:")
+        leftEdgeGesture.edges = UIRectEdge.Left
+        mailboxView.addGestureRecognizer(leftEdgeGesture)
+        
+        var rightEdgeGesture = UIScreenEdgePanGestureRecognizer(target: self, action: "onRightEdgePan:")
+        rightEdgeGesture.edges = UIRectEdge.Right
+        mailboxView.addGestureRecognizer(rightEdgeGesture)
     }
 
     override func didReceiveMemoryWarning() {
@@ -236,7 +240,7 @@ class ViewController: UIViewController {
         firstMessageHidden = false
     }
     
-    func onEdgePan(sender: UIPanGestureRecognizer) {
+    func onLeftEdgePan(sender: UIPanGestureRecognizer) {
         var translation = sender.translationInView(view)
         var velocity = sender.velocityInView(view)
         if (sender.state == UIGestureRecognizerState.Began) {
@@ -246,7 +250,7 @@ class ViewController: UIViewController {
         } else if (sender.state == UIGestureRecognizerState.Ended) {
             if (velocity.x > 0) {
                 UIView.animateWithDuration(0.3, animations: { () -> Void in
-                    self.mailboxView.center = CGPoint(x: self.mailboxViewStartingCenter.x + 280, y: self.mailboxViewStartingCenter.y)
+                    self.mailboxView.center = CGPoint(x: self.mailboxViewStartingCenter.x + 290, y: self.mailboxViewStartingCenter.y)
                 })
             } else if (velocity.x <= 0) {
                 UIView.animateWithDuration(0.2, animations: { () -> Void in
@@ -254,6 +258,27 @@ class ViewController: UIViewController {
                 })
             }
         }
+    }
+    
+    func onRightEdgePan(sender: UIPanGestureRecognizer) {
+        var translation = sender.translationInView(view)
+        var velocity = sender.velocityInView(view)
+        if (sender.state == UIGestureRecognizerState.Began) {
+            mailboxViewStartingCenter = mailboxView.center
+        } else if (sender.state == UIGestureRecognizerState.Changed){
+            mailboxView.center = CGPoint(x: mailboxViewStartingCenter.x + translation.x, y: mailboxViewStartingCenter.y)
+        } else if (sender.state == UIGestureRecognizerState.Ended) {
+            if (velocity.x < 0) {
+                UIView.animateWithDuration(0.3, animations: { () -> Void in
+                    self.mailboxView.center = CGPoint(x: 160, y: self.mailboxViewStartingCenter.y)
+                })
+            } else if (velocity.x >= 0) {
+                UIView.animateWithDuration(0.2, animations: { () -> Void in
+                    self.mailboxView.center = CGPoint(x: self.mailboxViewStartingCenter.x, y: self.mailboxViewStartingCenter.y)
+                })
+            }
+        }
+
     }
 
 }

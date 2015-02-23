@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0722D98F-4CD5-4362-918A-7E7C49BDCE67</string>
+	<key>IDESourceControlProjectName</key>
+	<string>homework-3-mailbox</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E4463C0F29321B8A61D33CFF218748676ABA7CD6</key>
+		<string>https://github.com/scottsil/homework-3-mailbox.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>homework-3-mailbox.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E4463C0F29321B8A61D33CFF218748676ABA7CD6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/scottsil/homework-3-mailbox.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E4463C0F29321B8A61D33CFF218748676ABA7CD6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E4463C0F29321B8A61D33CFF218748676ABA7CD6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>homework-3-mailbox</string>
+		</dict>
+	</array>
+</dict>
+</plist>
